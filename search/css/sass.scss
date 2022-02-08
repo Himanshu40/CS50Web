@@ -1,0 +1,262 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    min-width: 400px;
+}
+
+body, input, button {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #3c4043;
+}
+
+%displaySize {
+    display: flex;
+    flex-direction: column;
+}
+
+.shrink {
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+
+.content {
+    @extend %displaySize;
+    height: 100%;
+}
+
+
+.upper-content {
+    align-items: center;
+    height: 60px;
+    padding: 6px;
+}
+
+
+.links {
+    display: flex;
+    width: 300px;
+    float: right;
+
+    .links1 {
+        width: 110px;
+        text-align: right;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .back-page {
+        width: 240px;
+        text-align: right;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+}
+
+
+.logo {
+    @extend %displaySize;
+    align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+}
+
+.googleLogo {
+    max-height: 92px;
+    position: relative;
+    height: 100%;
+    margin-top: auto;
+}
+
+.imgLogo {
+    width: 272px;
+    height: 92px;
+}
+
+.images {
+    color: #4487f6;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: absolute;
+    left: 215px;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+
+.search-content {
+    padding: 20px;
+    max-height: 160px;
+}
+
+.search {
+    max-width: 584px;
+    position: relative;
+    padding-top: 6px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.search-box {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+}
+
+$box-shadow: 0px 1px 3px rgb(192, 185, 185);
+
+.search-box:hover {
+    box-shadow: $box-shadow;
+}
+
+.size {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+
+.icon-size {
+    margin: auto;
+}
+
+.search-bar {
+    margin-top: 3px;
+    color: #9aa0a6;
+    height: 20px;
+    width: 20px;
+}
+
+.size1 {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.search-bar-size {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.search-size {
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
+    font-size: 16px;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    height: 34px;
+    font-size: 16px;
+}
+
+.search-button {
+    height: 70px;
+    padding-top: 18px;
+    max-width: 584px;
+    margin: auto;
+}
+
+%search-text {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.google-search {
+    @extend %search-text;
+}
+
+.google-search:hover {
+    box-shadow: $box-shadow;
+}
+
+.feel-lucky {
+    @extend %search-text;
+}
+
+.feel-lucky:hover {
+    box-shadow: $box-shadow;
+}
+
+.image-search {
+    flex: 0 0 auto;
+    padding-right: 13px;
+    height: 44px;
+    width: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.image-search-button {
+    background: none;
+    color: #8ab4f8;
+    height: 24px;
+    width: 24px;
+    margin: auto;
+}
+
+.image-search-button1 {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+
+    svg {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,214 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: arial,sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #3c4043;
+}
+
+.content {
+    min-height: 100%;
+}
+
+.upper-content {
+    align-items: center;
+    height: 20px;
+    padding: 6px;
+}
+
+.links {
+    display: flex;
+    width: 300px;
+    float: right;
+    
+    .back-page {
+        width: 240px;
+        text-align: right;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+}
+
+.heading {
+    font-size: 20px;
+    margin: 25px 35px;
+    color: #f28b82;
+}
+
+.heading-1 {
+    font-size: 20px;
+}
+
+.border {
+    border-bottom: 1px solid black;
+}
+
+.bottom-content {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+
+
+%heading-message {
+    width: 100%;
+    clear: both;
+}
+
+.bottom-heading {
+    @extend %heading-message;
+}
+
+%section-message {
+    float: left;
+    display: block;
+    min-width: 167px;
+}
+
+.section-1 {
+    @extend %section-message;
+    width: 16%;
+    font-size: 16px;
+    min-height: 42px;
+    font-weight: 500;
+}
+
+%section-content-message {
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section-1-content {
+    @extend %section-content-message;
+}
+
+.section-2 {
+    @extend %section-message;
+    min-height: 41px;
+    width: 50%;
+}
+
+.section-3 {
+    @extend %section-message;
+    width: 33%;
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.input-field {
+    @extend %heading-message;
+}
+
+$clear: both;
+
+.input-field-1 {
+    clear: $clear;
+}
+
+.input-section-1 {
+    @extend %section-message;
+}
+
+.section-1 .input-section-1 {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.text1 {
+    @extend %section-content-message;
+}
+
+.input-section-2 {
+    @extend %section-message;
+    min-height: 41px;
+    width: 50%;
+}
+
+.input-section-2-padding {
+    padding-right: 16px;
+}
+
+.jfk-textinput {
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    border-radius: 1px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #5f6368;
+}
+
+.input-section-3 {
+    float: left;
+    display: block;
+    width: 32%;
+    min-width: 160px;
+    margin: 0 0 8px 1%;
+    color: black;
+    font-size: 11px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.demo {
+    font-family: monospace;
+    font-size: 11px;
+    white-space: pre;
+}
+
+.input-field-2 {
+    clear: $clear;
+}
+
+.input-field-3 {
+    clear: $clear;
+}
+
+.input-field-4 {
+    clear: $clear;
+}
+
+.input-field-5 {
+    clear: $clear;
+}
+
+.jfk-button {
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    outline: 0;
+    line-height:100%;
+    height:30px;
+    min-width:120px;
+    user-select:none;
+}
+
+.jfk-button-action {
+    background: #8ab4f8;
+    border-color: #8ab4f8;
+    color: #202124;
+    box-shadow: none;
+    border: 1px solid #3079ed;
+}
+
+.duBGpe {
+    float: right;
+    margin: 10px 0;
+    padding: 0 12px;
+}
